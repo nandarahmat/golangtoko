@@ -28,10 +28,10 @@ func Run() {
 		log.Fatalf("Error on loading .env file")
 	}
 
-	appConfig.AppName = getEnv("APP_NAME", "GoToko")
+	appConfig.AppName = getEnv("APP_NAME", "GolangToko")
 	appConfig.AppEnv = getEnv("APP_ENV", "development")
-	appConfig.AppPort = getEnv("APP_PORT", "9000")
-	appConfig.AppURL = getEnv("APP_URL", "http://localhost:9000")
+	appConfig.AppPort = getEnv("APP_PORT", "5000")
+	appConfig.AppURL = getEnv("APP_URL", "http://localhost:5000")
 
 	dbConfig.DBHost = getEnv("DB_HOST", "localhost")
 	dbConfig.DBUser = getEnv("DB_USER", "user")
